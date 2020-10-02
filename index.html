@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Car Rentals Price Comparison</title>
+	<meta property="og:title" content="Price Comparison for Car Rentals">
+	<meta property="og:site_name" content="My Website Name">
+	<meta property="og:url" content="https://domain.com">
+	<meta property="og:description" content="Find the best deal for car rentals by searching multiple car rental websites at once. Compare prices and save. It's as easy as 1-2-3!">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://images.pexels.com/photos/21014/pexels-photo.jpg">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@MyTwitterUsername">
+	<meta name="twitter:description" content="Find the best deal for car rentals by searching multiple car rental websites at once. Compare prices and save. It's as easy as 1-2-3!">
+	<meta name="twitter:title" content="Price Comparison for Car Rentals">
+	<meta name="twitter:image" content="https://images.pexels.com/photos/21014/pexels-photo.jpg">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg container py-2 font-weight-bold">
+			<a class="navbar-brand" href="#">
+				<img src="https://via.placeholder.com/150x50?text=YOUR&nbsp;LOGO" class="img-fluid" width="150" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active mr-3">
+						<a class="nav-link font-weight-bold" href="#">Active</a>
+					</li>
+					<li class="nav-item mr-3">
+						<a class="nav-link font-weight-bold" href="#">Inactive</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+						<div class="dropdown-menu dropdown-menu-right py-0 rounded-0" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Menu 1</a>
+							<a class="dropdown-item" href="#">Menu 2</a>
+							<a class="dropdown-item" href="#">Menu 3</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="jumbotron mb-4 py-5 px-0">
+			<div class="container">
+				<div class="px-sm-5">
+					<h1 class="display-4 text-uppercase">Car Rentals Price Comparison</h1>
+					<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+				</div>
+				<div class="px-sm-5">
+					<form action="#" method="get" class="p-4 rounded-sm">
+						<div class="row">
+							<div class="col-lg col-12 pb-3 pb-lg-0 pr-lg-2">
+								<div class="app-form-group pt-1 px-3 bg-white rounded">
+									<div class="pb-2 text-center">
+										<label class="h6 font-weight-bold">Pick-up</label>
+									</div>
+									<div class="form-group">
+										<select name="pick-up-location" class="custom-select">
+											<optgroup label="Auckland City">
+												<option value='{"lat":-36.84846,"lng":174.763332}'>One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</optgroup>
+											<optgroup label="Auckland International Airport">
+												<option value="4">One</option>
+												<option value="5">Two</option>
+												<option value="6">Three</option>
+											</optgroup>
+										</select>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<input name="pick-up-date" required type="date" min="2020-09-20" value="2020-09-20" class="form-control">
+											</div>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<input name="pick-up-time" required type="time" min="00:00" max="23:30" value="14:00" step="1800" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg col-12">
+								<div class="app-form-group pt-1 px-3 bg-white rounded">
+									<div class="pb-2 text-center">
+										<label class="h6 font-weight-bold">Drop-off</label>
+									</div>
+									<div class="form-group">
+										<select name="drop-off-location" class="custom-select">
+											<optgroup label="Auckland City">
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</optgroup>
+											<optgroup label="Auckland International Airport">
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+											</optgroup>
+										</select>
+									</div>
+									<div class="row">
+										<div class="col">
+											<div class="form-group">
+												<input name="drop-off-date" required type="date" min="2020-09-21" value="2020-09-21" class="form-control">
+											</div>
+										</div>
+										<div class="col">
+											<div class="form-group">
+												<input name="drop-off-time" required type="time" min="00:00" max="23:30" value="14:00" step="1800" class="form-control">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-md-6 col-12">
+								<div class="px-3 px-md-0 pl-lg-3">
+									<div class="form-group m-0 pt-3">
+										<input name="driver-age" required type="number" min="18" placeholder="Drivers's Age" class="form-control">
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 d-none d-lg-block"></div>
+							<div class="col-lg-3 col-md-6 col-12 pt-3">
+								<div class="px-3 px-md-0 pr-lg-3">
+									<button class="btn-primary py-2 btn-block rounded border-0" type="submit">Search</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="app-vehicles-header app-vehicles-header-progress container mb-2">
+		<div class="px-sm-5">
+			<div class="app-vehicles-header-primary row">
+				<div class="col pt-4">
+					<p class="m-0">Searching for the Best Car Rental Deals.</p>
+					<div class="clearfix">
+						<div class="float-left">
+							<p class="m-0 pb-3 h5 text-primary font-weight-bold"><span class="app-progress">25</span>% to complete</p>
+						</div>
+						<div class="float-right">
+							<div class="d-flex justify-content-end">
+								<div class="pr-2">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+								</div>
+								<p><span class="app-countdown">12</span> seconds</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="app-vehicles-header-secondary row">
+				<div class="col pb-5">
+					<div class="progress">
+						<div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="app-vehicles-header app-vehicles-header-filtering-sorting container mb-2">
+		<div class="px-sm-5">
+			<div class="app-vehicles-header-primary row">
+				<div class="app-filters col-12">
+					<div class="row">
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Year</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Make</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Filter</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Filter</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Filter</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg col-md-4 col-6">
+							<ul class="list-unstyled">
+								<li class="dropdown">
+									<button class="btn btn-transperent px-0 rounded-0 custom-select" type="button" data-toggle="dropdown">Filter</button>
+									<ul class="dropdown-menu allow-focus p-0 border-secondary rounded-0">
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2019
+											</label>
+										</li>
+										<li>
+											<label class="m-0 py-1 w-100">
+												<input type="checkbox" class="mx-2">2018
+											</label>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="app-filters-selected col-12">
+					<div class="row">
+						<div class="col-lg-12 col-12">
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white">Remove all</button>
+							<button type="button" class="btn btn-secondary mb-1 rounded-0 border-0" disabled>Remove all</button>
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white"><span>Item 1</span><i class="fa fa-times-circle ml-1" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white"><span>Item 1</span><i class="fa fa-times-circle ml-1" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white"><span>Item 1</span><i class="fa fa-times-circle ml-1" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white"><span>Item 1</span><i class="fa fa-times-circle ml-1" aria-hidden="true"></i></button>
+							<button type="button" class="btn btn-secondary btn-outline-danger mb-1 rounded-0 border-0 text-white"><span>Item 1</span><i class="fa fa-times-circle ml-1" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="app-vehicles-header-secondary row">
+				<div class="col-md-6 col-4 py-2">
+					<p class="m-0 p-0 pt-2">Results: 18</p>
+				</div>
+				<div class="col-md-6 col py-2 pl-0 d-flex justify-content-end">
+					<p class="m-0 pt-2 pr-1 pr-md-3">Sort:</p>
+					<div>
+						<select class="custom-select rounded-0">
+							<option selected>Price - Low to High</option>
+							<option>Price - High to Low</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<main class="mb-5">
+		<div class="app-vehicle container pb-3">
+			<div class="py-2 px-3 border rounded">
+				<div class="row">
+					<div class="col-lg-3 col-12 pt-1 pb-3 pb-lg-0">
+						<div class="d-flex justify-content-center align-items-center">
+							<img class="app-vehicle-image img-fluid rounded-sm w-100" src="https://via.placeholder.com/210x140?text=VEHICLE" alt="">
+						</div>
+						<div class="pt-2 d-flex justify-content-center align-items-center">
+							<a href="#" target="_blank">
+								<img class="app-vehicle-company-logo img-fluid" src="https://via.placeholder.com/100x50?text=LOGO" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pb-3 pb-lg-0">
+						<h2 class="app-vehicle-headline m-0 pb-3 font-weight-bold h5 text-truncate">Hyundai i30 or similar</h2>
+						<div class="row pb-3 pb-sm-0">
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-features list-unstyled m-0">
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Passengers: 4-5</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-car" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Hyundai</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2016-2018</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-suitcase" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2 Large, 2 Small</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-bed" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Sleeps: 2-4</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2.2 Liters</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-fire" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Electric Hybrid</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-window-restore" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Doors: 4</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-options list-unstyled m-0">
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Compact Disc (CD) Player</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Global Position Satellite (GPS) Navigation</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-2">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="accordion" id="app-vehicle-options-accordion-1">
+											<div class="card border-0 bg-transparent">
+												<div class="card-header p-0 bg-transparent border-bottom-0" id="app-vehicle-options-heading-1">
+													<div class="my-1">
+														<a href="#" class="collapsed p-0 d-block text-left" data-toggle="collapse" data-target="#app-vehicle-options-accordion-collapse-1" aria-expanded="false" aria-controls="app-vehicle-options-accordion-collapse-1">
+															<i class="fa fa-plus mr-2" aria-hidden="true"></i>
+															<span>Show/Hide Other Options</span>
+														</a>
+													</div>
+												</div>
+												<div id="app-vehicle-options-accordion-collapse-1" class="collapse" aria-labelledby="app-vehicle-options-heading-1" data-parent="#app-vehicle-options-accordion-1">
+													<div class="card-body pt-2 px-0 pb-0">
+														<ul class="list-unstyled">
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="align-items-center col-lg-3 col-12 pb-3 pb-lg-0 d-flex">
+						<div class="app-vehicle-price w-100">
+							<p class="app-vehicle-price-total m-0 pb-2 font-weight-bold h2 text-center"><span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>476.00</p>
+							<p class="app-vehicle-price-calculation m-0 pb-5 h6 text-center">(<span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>68.00 x 7 days)</p>
+							<a href="#" class="btn btn-primary btn-block rounded-0 font-weight-bold" data-toggle="modal" data-target="#app-rent-now-button-modal">Rent Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="app-vehicle container pb-3">
+			<div class="py-2 px-3 border rounded">
+				<div class="row">
+					<div class="col-lg-3 col-12 pt-1 pb-3 pb-lg-0">
+						<div class="d-flex justify-content-center align-items-center">
+							<img class="app-vehicle-image img-fluid rounded-sm w-100" src="https://via.placeholder.com/210x140?text=VEHICLE" alt="">
+						</div>
+						<div class="pt-2 d-flex justify-content-center align-items-center">
+							<a href="#" target="_blank">
+								<img class="app-vehicle-company-logo img-fluid" src="https://via.placeholder.com/100x50?text=LOGO" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pb-3 pb-lg-0">
+						<h2 class="app-vehicle-headline m-0 pb-3 font-weight-bold h5 text-truncate">Hyundai i30 or similar</h2>
+						<div class="row pb-3 pb-sm-0">
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-features list-unstyled m-0">
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Passengers: 4-5</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-car" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Hyundai</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2016-2018</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-suitcase" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2 Large, 2 Small</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-bed" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Sleeps: 2-4</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2.2 Liters</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-fire" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Electric Hybrid</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-window-restore" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Doors: 4</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-options list-unstyled m-0">
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Compact Disc (CD) Player</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Global Position Satellite (GPS) Navigation</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-2">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="accordion" id="app-vehicle-options-accordion-2">
+											<div class="card border-0 bg-transparent">
+												<div class="card-header p-0 bg-transparent border-bottom-0" id="app-vehicle-options-heading-2">
+													<div class="my-1">
+														<a href="#" class="collapsed p-0 d-block text-left" data-toggle="collapse" data-target="#app-vehicle-options-accordion-collapse-2" aria-expanded="false" aria-controls="app-vehicle-options-accordion-collapse-2">
+															<i class="fa fa-plus mr-2" aria-hidden="true"></i>
+															<span>Show/Hide Other Options</span>
+														</a>
+													</div>
+												</div>
+												<div id="app-vehicle-options-accordion-collapse-2" class="collapse" aria-labelledby="app-vehicle-options-heading-2" data-parent="#app-vehicle-options-accordion-2">
+													<div class="card-body pt-2 px-0 pb-0">
+														<ul class="list-unstyled">
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="align-items-center col-lg-3 col-12 pb-3 pb-lg-0 d-flex">
+						<div class="app-vehicle-price w-100">
+							<p class="app-vehicle-price-total m-0 pb-2 font-weight-bold h2 text-center"><span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>476.00</p>
+							<p class="app-vehicle-price-calculation m-0 pb-5 h6 text-center">(<span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>68.00 x 7 days)</p>
+							<a href="#" class="btn btn-primary btn-block rounded-0 font-weight-bold" data-toggle="modal" data-target="#app-rent-now-button-modal">Rent Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="app-vehicle container pb-3">
+			<div class="py-2 px-3 border rounded">
+				<div class="row">
+					<div class="col-lg-3 col-12 pt-1 pb-3 pb-lg-0">
+						<div class="d-flex justify-content-center align-items-center">
+							<img class="app-vehicle-image img-fluid rounded-sm w-100" src="https://via.placeholder.com/210x140?text=VEHICLE" alt="">
+						</div>
+						<div class="pt-2 d-flex justify-content-center align-items-center">
+							<a href="#" target="_blank">
+								<img class="app-vehicle-company-logo img-fluid" src="https://via.placeholder.com/100x50?text=LOGO" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12 pb-3 pb-lg-0">
+						<h2 class="app-vehicle-headline m-0 pb-3 font-weight-bold h5 text-truncate">Hyundai i30 or similar</h2>
+						<div class="row pb-3 pb-sm-0">
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-features list-unstyled m-0">
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Passengers: 4-5</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-car" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Hyundai</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2016-2018</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-suitcase" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2 Large, 2 Small</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-bed" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Sleeps: 2-4</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-cogs" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">2.2 Liters</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-fire" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Electric Hybrid</p>
+											</div>
+										</div>
+									</li>
+									<li class="mb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-window-restore" aria-hidden="true"></i>
+											</div>
+											<div class="col text-truncate p-0 pl-2">
+												<p class="m-0 p-0 text-truncate">Doors: 4</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 col-12">
+								<ul class="app-vehicle-options list-unstyled m-0">
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Compact Disc (CD) Player</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-3">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Global Position Satellite (GPS) Navigation</p>
+											</div>
+										</div>
+									</li>
+									<li class="pb-2">
+										<div class="row">
+											<div class="col-1">
+												<i class="fa fa-check" aria-hidden="true"></i>
+											</div>
+											<div class="col p-0 pl-2 text-truncate">
+												<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="accordion" id="app-vehicle-options-accordion-3">
+											<div class="card border-0 bg-transparent">
+												<div class="card-header p-0 bg-transparent border-bottom-0" id="app-vehicle-options-heading-3">
+													<div class="my-1">
+														<a href="#" class="collapsed p-0 d-block text-left" data-toggle="collapse" data-target="#app-vehicle-options-accordion-collapse-3" aria-expanded="false" aria-controls="app-vehicle-options-accordion-collapse-3">
+															<i class="fa fa-plus mr-2" aria-hidden="true"></i>
+															<span>Show/Hide Other Options</span>
+														</a>
+													</div>
+												</div>
+												<div id="app-vehicle-options-accordion-collapse-3" class="collapse" aria-labelledby="app-vehicle-options-heading-3" data-parent="#app-vehicle-options-accordion-3">
+													<div class="card-body pt-2 px-0 pb-0">
+														<ul class="list-unstyled">
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li class="pb-3">
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<div class="row">
+																	<div class="col-1">
+																		<i class="fa fa-check" aria-hidden="true"></i>
+																	</div>
+																	<div class="col p-0 pl-2 text-truncate">
+																		<p class="m-0 p-0 text-truncate">Air Conditioning (AC)</p>
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="align-items-center col-lg-3 col-12 pb-3 pb-lg-0 d-flex">
+						<div class="app-vehicle-price w-100">
+							<p class="app-vehicle-price-total m-0 pb-2 font-weight-bold h2 text-center"><span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>476.00</p>
+							<p class="app-vehicle-price-calculation m-0 pb-5 h6 text-center">(<span class="app-currency-code">USD</span><span class="app-currency-symbol">$</span>68.00 x 7 days)</p>
+							<a href="#" class="btn btn-primary btn-block rounded-0 font-weight-bold" data-toggle="modal" data-target="#app-rent-now-button-modal">Rent Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="app-partners container pt-5 pb-4 px-sm-0">
+		<div class="mx-lg-5 pt-5 px-lg-5">
+			<div class="jumbotron mx-lg-5 mb-5 pt-0 pb-0">
+				<p class="display-4 m-0">Our Partners</p>
+				<p class="lead">Find the best deal from our partners.</p>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-3 d-flex justify-content-center align-items-center">
+						<a href="#">
+							<img src="https://via.placeholder.com/170x85?text=LOGO" class="img-fluid" alt="">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-3 d-flex justify-content-center align-items-center">
+						<a href="#">
+							<img src="https://via.placeholder.com/170x50?text=LOGO" class="img-fluid" alt="">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-3 d-flex justify-content-center align-items-center">
+						<a href="#">
+							<img src="https://via.placeholder.com/150x85?text=LOGO" class="img-fluid" alt="">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-6 pb-3 d-flex justify-content-center align-items-center">
+						<a href="#">
+							<img src="https://via.placeholder.com/85x85?text=LOGO" class="img-fluid" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="mb-5 pt-5">
+		<div class="container">
+			<div>
+				<h2 class="mb-4 h3">Lorem Ipsum Dolor</h2>
+				<p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="row pt-2">
+					<div class="col-lg col-md-6 col-12 pb-3 pb-lg-0">
+						<div class="card">
+							<img src="https://via.placeholder.com/300x200?text=Card&nbsp;Image" class="img-fluid" alt="#">
+							<div class="card-body">
+								<h3 class="card-title">Card Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg col-md-6 col-12 pb-3 pb-lg-0">
+						<div class="card">
+							<img src="https://via.placeholder.com/300x200?text=Card&nbsp;Image" class="img-fluid" alt="#">
+							<div class="card-body">
+								<h3 class="card-title">Card Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg col-md-6 col-12 pb-3 pb-lg-0">
+						<div class="card">
+							<img src="https://via.placeholder.com/300x200?text=Card&nbsp;Image" class="img-fluid" alt="#">
+							<div class="card-body">
+								<h3 class="card-title">Card Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg col-md-6 col-12 pb-3 pb-lg-0">
+						<div class="card">
+							<img src="https://via.placeholder.com/300x200?text=Card&nbsp;Image" class="img-fluid" alt="#">
+							<div class="card-body">
+								<h3 class="card-title">Card Title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="mb-5 pt-5">
+		<div class="container">
+			<div class="pb-3">
+				<h2 class="h4 pb-3">Frequently Asked Questions</h2>
+				<div class="accordion" id="app-faq-accordion">
+					<div class="card">
+						<div class="card-header" id="app-faq-1">
+							<h3 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#app-faq-accordion-collapse-1" aria-expanded="false" aria-controls="app-faq-accordion-collapse-1">Question One</button>
+							</h3>
+						</div>
+						<div id="app-faq-accordion-collapse-1" class="collapse" aria-labelledby="app-faq-1" data-parent="#app-faq-accordion">
+							<div class="card-body">
+								<p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="app-faq-2">
+							<h3 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#app-faq-accordion-collapse-2" aria-expanded="false" aria-controls="app-faq-accordion-collapse-2">Question Two</button>
+							</h3>
+						</div>
+						<div id="app-faq-accordion-collapse-2" class="collapse" aria-labelledby="app-faq-2" data-parent="#app-faq-accordion">
+							<div class="card-body">
+								<p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="app-settings container mb-5 pt-5">
+		<div class="border-top pt-5">
+			<div class="row">
+				<div class="col-lg-1 d-none d-lg-block"></div>
+				<div class="col-lg-1 col-12 text-center text-lg-right">
+					<p class="m-0 pt-lg-2 pb-3 pb-lg-0 h5">Settings</p>
+				</div>
+				<div class="col-lg col-12 pb-3 pb-lg-0">
+					<ul class="m-0 list-unstyled">
+						<li class="nav-item dropdown sub-navbar-bar border rounded-lg">
+							<a class="app-setting-selected nav-link dropdown-toggle text-dark text-decoration-none text-truncate" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="mr-3">
+									<i class="fa fa-language" aria-hidden="true"></i>
+								</span>
+								<span class="mr-4">
+									<span>Language:</span> 
+									<span class="font-weight-bold">English (United States)</span>
+								</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right py-0 rounded-0 w-100" aria-labelledby="navbarDropdown">
+								<span class="py-2 pl-3 bg-secondary text-white d-block">
+									<i class="fa fa-check mr-2" aria-hidden="true"></i>
+									<span>English (United States)</span>
+								</span>
+								<a class="dropdown-item py-2 pl-4" href="#">
+									<span class="pl-3 ml-1">English (New Zealand)</span>
+								</a>
+								<a class="dropdown-item py-2 pl-4" href="#">
+									<span class="pl-3 ml-1">русский</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg col-12 pl-lg-0">
+					<ul class="m-0 list-unstyled">
+						<li class="nav-item dropdown sub-navbar-bar border rounded-lg">
+							<a class="app-setting-selected nav-link dropdown-toggle text-dark text-decoration-none text-truncate" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="mr-3">
+									<i class="fa fa-money" aria-hidden="true"></i>
+								</span>
+								<span class="mr-4">
+									<span>Currency:</span> 
+									<span class="font-weight-bold">New Zealand Dollar (USD)</span>
+								</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right py-0 rounded-0 w-100" aria-labelledby="navbarDropdown">
+								<span class="py-2 pl-3 bg-secondary text-white d-block">
+									<i class="fa fa-check mr-2" aria-hidden="true"></i>
+									<span>New Zealand Dollar (USD)</span>
+								</span>
+								<a class="dropdown-item py-2 pl-4" href="#">
+									<span class="ml-1 pl-3">United State Dollar (USD)</span>
+								</a>
+								<a class="dropdown-item py-2 pl-4" href="#">
+									<span class="ml-1 pl-3">Russian Ruble (RUB)</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block"></div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="app-footer-primary py-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12 pb-3 pb-lg-0 d-flex align-items-center">
+						<a href="#">
+							<img src="https://via.placeholder.com/300x100?text=YOUR&nbsp;LOGO" class="img-fluid" alt="">
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 pb-3 pb-lg-0">
+						<h2 class="m-0 pb-3 h5 font-weight-bold">About Us</h2>
+						<p class="m-0 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 pb-3 pb-lg-0">
+						<h2 class="m-0 pb-3 h5 font-weight-bold">Social Media</h2>
+						<p class="m-0 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						<ul class="list-unstyled d-flex">
+							<li class="mr-4">
+								<a href="#" target="_blank">
+									<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="mr-4">
+								<a href="#" target="_blank">
+									<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li class="mr-4">
+								<a href="#" target="_blank">
+									<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12 pb-md-3 pb-lg-0">
+						<h2 class="m-0 pb-3 h5 font-weight-bold">Contact Us</h2>
+						<div itemscope itemtype="https://schema.org/LocalBusiness">
+							<span class="d-none" itemprop="image">https://via.placeholder.com/1200x800</span>
+							<span class="d-none" itemprop="priceRange">$$</span>
+							<ul class="list-unstyled">
+								<li class="d-none">
+									<span itemprop="name">Your Company Name</span>
+								</li>
+								<li>
+									<div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="d-flex flex-column">
+										<div>
+											<i class="fa fa-map-marker mr-2" aria-hidden="true"></i>
+											<span itemprop="streetAddress">1 Queen Street</span>
+										</div>
+										<div class="ml-1 pl-3">
+											<span itemprop="addressLocality">Auckland City</span>
+										</div>
+										<div class="ml-1 pl-3">
+											<span itemprop="addressRegion">Auckland</span>
+											<span itemprop="postalCode">1010</span>
+										</div>
+										<div class="ml-1 pl-3 d-none">
+											<span itemprop="country">New Zealand</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<i class="fa fa-envelope-o mr-1" aria-hidden="true"></i>
+									<a href="mailto:hello@domain.com">
+										<span itemprop="email">hello@domain.com</span>
+									</a>
+								</li>
+								<li>
+									<i class="fa fa-phone mr-1" aria-hidden="true"></i>
+									<a href="tel:+18005551212">
+										<span itemprop="telephone">1 (800) 555-1212</span>
+									</a>
+								</li>
+								<li class="d-none">
+									<i class="fa fa-globe mr-1" aria-hidden="true"></i>
+									<a href="https://domain.com" target="_blank">
+										<span itemprop="url">https://domain.com</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="app-footer-secondary py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-7 col-12 text-center text-md-left">
+						<span>&copy; 2020 Your Company Name. All Rights Reserved.</span>
+					</div>
+					<div class="col-lg-6 col-md-5 col-12 text-center text-md-right">
+						<a href="#" class="mr-3">Privacy Policy</a>
+						<a href="#">Terms of Use</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal fade" id="app-rent-now-button-modal" tabindex="-1" role="dialog" aria-labelledby="app-rent-now-button-modal-label" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="app-rent-now-button-modal-label">Affiliate Program</h3>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Instead of opening up a dialog window like this one, you would normally redirect your users to the appropriate car rental company to a link with your affiliate code. This way, you can be credited by the car rental company should your users making a booking.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>

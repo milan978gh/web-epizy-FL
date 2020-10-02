@@ -1,0 +1,55 @@
+* {
+  color: #030303;
+}
+
+header .nav-item {
+  text-transform: uppercase;
+}
+
+header .nav-item a {
+  color: #183d90;
+}
+
+section .jumbotron {
+  background-image: url("https://cdn.pixabay.com/photo/2019/07/02/09/26/tesla-4311958_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+section .jumbotron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+section .jumbotron h1 {
+  color: #fff;
+}
+
+section .jumbotron p {
+  color: #fff;
+}
+
+section .jumbotron .bg-white {
+  background: #03030330 !important;
+}
+
+section .jumbotron .bg-white .h6 {
+  color: #fff;
+}
+
+section .jumbotron .btn-primary {
+  background: none;
+  border: 1px solid white !important;
+}
