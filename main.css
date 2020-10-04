@@ -1,5 +1,37 @@
+section .jumbotron, .app-partners {
+  background-image: url("https://cdn.pixabay.com/photo/2019/07/02/09/26/tesla-4311958_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+section .jumbotron::after, .app-partners::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #008000;
+  opacity: 0.7;
+  z-index: -1;
+}
+
 * {
-  color: #030303;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Tahoma;
+}
+
+.btn-primary {
+  background: none;
+  border: 1px solid #fff !important;
 }
 
 header .nav-item {
@@ -11,30 +43,13 @@ header .nav-item a {
 }
 
 section .jumbotron {
-  background-image: url("https://cdn.pixabay.com/photo/2019/07/02/09/26/tesla-4311958_960_720.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 0px;
   text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-section .jumbotron::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.7;
-  z-index: -1;
 }
 
 section .jumbotron h1 {
   color: #fff;
+  font-family: Georgia;
 }
 
 section .jumbotron p {
@@ -49,7 +64,69 @@ section .jumbotron .bg-white .h6 {
   color: #fff;
 }
 
-section .jumbotron .btn-primary {
-  background: none;
-  border: 1px solid white !important;
+.app-vehicles-header-progress {
+  background-color: #0088ff10;
+  margin: 4rem auto 0 !important;
+  padding: 20px;
+}
+
+.app-vehicles-header-filtering-sorting {
+  background-color: #0088ff10;
+  margin-bottom: 1.5rem !important;
+  padding: 20px;
+}
+
+.app-vehicles-header-filtering-sorting .custom-select {
+  border: none;
+}
+
+.app-vehicles-header-filtering-sorting .btn-secondary {
+  background-color: #007bff;
+}
+
+main.mb-5 {
+  margin-bottom: 4rem !important;
+}
+
+main.mb-5 .app-vehicle {
+  background-color: #0088ff10;
+  margin-bottom: 1.5rem;
+}
+
+main.mb-5 .app-vehicle .border {
+  border: none !important;
+}
+
+main.mb-5 .app-vehicle .app-vehicle-company-logo {
+  display: none;
+}
+
+main.mb-5 .app-vehicle .col-lg-3.align-items-center {
+  color: #fff;
+  background-color: #4aa44a;
+}
+
+main.mb-5 .app-vehicle .my-1 a {
+  color: #183d90;
+}
+
+.app-partners {
+  max-width: none;
+  padding: 0px !important;
+}
+
+.app-partners .mx-lg-5.pt-5.px-lg-5 {
+  padding-bottom: 3rem;
+}
+
+.app-partners .jumbotron {
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 0px;
+  margin-bottom: 0px !important;
+}
+
+.app-partners .jumbotron .lead {
+  margin-bottom: 4rem !important;
 }

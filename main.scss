@@ -1,13 +1,43 @@
-$txt-colorLight: #fff;
-$txt-colorDark: #030303;
-$blue-cornflower: #183d90;
+$txt-light: #fff;
+$txt-dark: #030303;
+$blue-dark: #183d90;
+$blue: #007bff;
+$bg-light: #0088ff10;
 $black-rich: #030303;
-
-
-
+$serif: Georgia;
+$sans: Tahoma;
+%bg-image {
+    background-image: url("https://cdn.pixabay.com/photo/2019/07/02/09/26/tesla-4311958_960_720.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+%bg-image-after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #008000;
+    opacity: 0.7;
+    z-index: -1;
+}
 
 * {
-    color: $txt-colorDark;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: $sans;
+}
+
+.btn-primary {
+    background: none;
+    border: 1px solid #fff !important;
 }
 
 header {
@@ -15,58 +45,100 @@ header {
         text-transform: uppercase;
 
         a {
-            color: $blue-cornflower;
+            color: $blue-dark;
         }
     }
 }
 
 section {
     .jumbotron {
-        background-image: url("https://cdn.pixabay.com/photo/2019/07/02/09/26/tesla-4311958_960_720.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @extend %bg-image;
         border-radius: 0px;
         text-align: center;
-        position: relative;
-        z-index: 1;
 
         &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            opacity: 0.7;
-            z-index: -1;
+            @extend %bg-image-after;
         }
 
         h1 {
-            color: $txt-colorLight;
+            color: $txt-light;
+            font-family: $serif;
         }
         p {
-            color: $txt-colorLight;
+            color: $txt-light;
         }
         .bg-white {
             background: #03030330 !important;
 
             .h6 {
-                color: $txt-colorLight;
+                color: $txt-light;
             }
-        }
-        // osamostali batton kad sredis vehicle rent
-        .btn-primary {
-            background: none;
-            border: 1px solid white !important;
         }
     }
 }
-.app-vehicles-header-progress{
-
+.app-vehicles-header-progress {
+    background-color: $bg-light;
+    margin: 4rem auto 0 !important;
+    padding: 20px;
 }
 
 .app-vehicles-header-filtering-sorting {
-    
+    background-color: $bg-light;
+    margin-bottom: 1.5rem !important;
+    padding: 20px;
+
+    .custom-select {
+        border: none;
+    }
+    .btn-secondary {
+        background-color: $blue;
+    }
+}
+
+main.mb-5 {
+    margin-bottom: 4rem !important;
+
+    .app-vehicle {
+        background-color: $bg-light;
+        margin-bottom: 1.5rem;
+
+        .border {
+            border: none !important;
+        }
+        .app-vehicle-company-logo {
+            display: none;
+        }
+        .col-lg-3.align-items-center {
+            color: $txt-light;
+            background-color: #4aa44a;
+        }
+        .my-1 a{
+            color: $blue-dark;
+        }
+    }
+}
+
+.app-partners {
+    @extend %bg-image;
+    max-width: none;
+    padding: 0px !important;
+
+    &::after {
+        @extend %bg-image-after;
+    }
+
+    .mx-lg-5.pt-5.px-lg-5 {
+        padding-bottom: 3rem;
+    }
+    .jumbotron {
+        color: $txt-light;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 0px;
+        margin-bottom: 0px !important;
+
+        .lead {
+            margin-bottom: 4rem !important;
+        }
+    }
 }
