@@ -1,5 +1,0 @@
-white: #ffffff
-red venetian: #cd1214
-blue yale: #004B8E
-blue dark cornflower: #183D90
-black rich: #030303

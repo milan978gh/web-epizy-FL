@@ -1,9 +1,8 @@
 $txt-light: #fff;
-$txt-dark: #030303;
-$blue-dark: #183d90;
+$txt-dark: #001d5f;
 $blue: #007bff;
-$bg-light: #0088ff10;
-$black-rich: #030303;
+$bg-light: #eef7ff;
+$green: #007700;
 $serif: Georgia;
 $sans: Tahoma;
 %bg-image {
@@ -45,7 +44,7 @@ header {
         text-transform: uppercase;
 
         a {
-            color: $blue-dark;
+            color: $txt-dark;
         }
     }
 }
@@ -76,13 +75,24 @@ section {
         }
     }
 }
+
 .app-vehicles-header-progress {
+    color: $txt-dark;
     background-color: $bg-light;
-    margin: 4rem auto 0 !important;
+    margin: 3rem auto 0 !important;
     padding: 20px;
+
+    .text-primary{
+        color: $green !important;
+    }
+    .progress-bar{
+        background-color: $green !important;
+
+    }
 }
 
 .app-vehicles-header-filtering-sorting {
+    color: $txt-dark;
     background-color: $bg-light;
     margin-bottom: 1.5rem !important;
     padding: 20px;
@@ -91,41 +101,42 @@ section {
         border: none;
     }
     .btn-secondary {
-        background-color: $blue;
+        background-color: $green;
     }
 }
 
 main.mb-5 {
-    margin-bottom: 4rem !important;
+    margin-bottom: 3rem !important;
 
     .app-vehicle {
         background-color: $bg-light;
         margin-bottom: 1.5rem;
+        padding: 1rem !important;
 
         .border {
             border: none !important;
+
+            .col-lg-6.col-12.pb-3.pb-lg-0 {
+                color: $txt-dark;
+            }
         }
         .app-vehicle-company-logo {
             display: none;
         }
         .col-lg-3.align-items-center {
             color: $txt-light;
-            background-color: #4aa44a;
+            background-color: $green;
         }
-        .my-1 a{
-            color: $blue-dark;
+        .my-1 a {
+            color: $txt-dark;
         }
     }
 }
 
 .app-partners {
-    @extend %bg-image;
+    background-color: $green;
     max-width: none;
     padding: 0px !important;
-
-    &::after {
-        @extend %bg-image-after;
-    }
 
     .mx-lg-5.pt-5.px-lg-5 {
         padding-bottom: 3rem;
@@ -137,8 +148,68 @@ main.mb-5 {
         border-radius: 0px;
         margin-bottom: 0px !important;
 
+        p.display-4.m-0 {
+            font-family: $serif;
+        }
         .lead {
             margin-bottom: 4rem !important;
         }
     }
 }
+
+section.mb-5.pt-5 {
+    margin: 3rem !important;
+    padding: 0px !important;
+
+    .container {
+        color: $txt-dark;
+        background-color: $bg-light;
+
+        h2 {
+            padding-top: 1rem;
+        }
+    }
+    .card {
+        border: none;
+
+        &-body {
+            color: $txt-light;
+            background-color: $green;
+        }
+
+        &-header {
+            background-color: $bg-light;
+            border: none;
+
+            .btn-link {
+                color: $txt-dark;
+            }
+        }
+    }
+}
+
+.app-settings {
+    color: $txt-dark;
+    padding: 0px !important;
+
+    .border-top {
+        border: none !important;
+        background-color: $bg-light;
+        padding-bottom: 3rem;
+    }
+}
+
+footer {
+    color: $txt-light;
+    background-color: $green;
+
+    h2 {
+        font-family: serif;
+    }
+    a {
+        color: $txt-light;
+    }
+}
+
+
+
